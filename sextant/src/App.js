@@ -1,26 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  function Exhibit(){
+    return <h2>Children</h2>;
+  }
+  function Banner(){
+    return <h1>Title of Page</h1>;
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to React (cisco).
-
-        </a>
-        <br></br>
-        <div>Purpose of this task was to start up the working envirment. We are building a new dash board!</div>
-      </header>
+      <Banner/>
+      <Exhibit/>
+      <div>Hello World</div>
     </div>
   );
 }
