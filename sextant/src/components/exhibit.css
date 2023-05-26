@@ -1,0 +1,39 @@
+/* main Exhibit div that ecapusaltes the entire Exhibit Component */
+.Exhibit {
+    display: inline-grid;
+    background-color: #102fc9;
+  
+    padding: 0vw 2vw 0vw 2vw;
+    text-align: center;
+    color: hsl(192, 100%, 10%);
+    border: 0.25vw solid #005266;
+    border-radius: 0.2in;
+}
+ /* This is the text that corresponds to the className ExhibitHeading 
+    This is a prop of a the Exhibit meaning when calling <Exhibit/> you main enter text 
+    corresponing to the prop.namegiven.
+ */
+  .ExhibitHeading {
+    font-weight: bold;
+    color: white;
+    font-size: 20px; /* Match the font size from the Banner component */
+  }
+  /* This is a child of Exhibit, though we still dont know the content of the children of Exhibit we still can
+  pass it through as a prop and give it css styling to see what it may look like */
+  .ExhibitContent {
+    margin: 0.5vw;
+    padding: 1vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: #808ac0;
+    border: 0.25vw solid #000000;
+    border-radius: 0.5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ExhibitContent:hover {
+    background-color: #a7b2d4;
+  }
+  
