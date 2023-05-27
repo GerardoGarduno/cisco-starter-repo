@@ -17,9 +17,9 @@ class AddressDisplay extends Component {
 
     render() {
         return (
-            <span className="AddressDisplay">
+            <div>
                 {this.state.ipAddress}
-            </span>
+            </div>
         );
     }
 }

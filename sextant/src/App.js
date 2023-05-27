@@ -6,7 +6,7 @@ import './App.css';
 import Exhibit from './components/Exhibit';
 import Banner from './components/Banner';
 import AddressDisplay from './components/address';
-
+import PylonConnector from './components/PylonConnector';
 function App() {
   // function exhibit(){
   //   return <h2>Children</h2>;
@@ -23,6 +23,9 @@ function App() {
         </Exhibit>
         <Exhibit exhibitText = "This is the users IPv6">
           <AddressDisplay url='https://api64.ipify.org?format=json' />
+        </Exhibit>
+        <Exhibit exhibitText = "This is the latency of the user.">
+          <PylonConnector />
         </Exhibit>
 
     </div>
