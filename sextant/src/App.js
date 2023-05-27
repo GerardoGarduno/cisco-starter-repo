@@ -5,6 +5,7 @@ import './App.css';
 
 import Exhibit from './components/Exhibit';
 import Banner from './components/Banner';
+import AddressDisplay from './components/address';
 
 function App() {
   // function exhibit(){
@@ -13,13 +14,17 @@ function App() {
   // function Banner(){
   //   return <h1>Title of Page</h1>;
   // }
+
   return (
     <div className="App">
         <Banner/>  
-        <Exhibit exhibitText = "This is an exhibit"/>
-        <Exhibit exhibitText = "This is another exhibiit"/>
-        <Exhibit exhibitText = "This is the last exhibiit"/>
-        
+        <Exhibit exhibitText = "This is the users IPv4">
+          <AddressDisplay url = 'https://api.ipify.org?format=json'/>
+        </Exhibit>
+        <Exhibit exhibitText = "This is the users IPv6">
+          <AddressDisplay url='https://api64.ipify.org?format=json' />
+        </Exhibit>
+
     </div>
   );
 }

@@ -2,12 +2,13 @@
 .Exhibit {
     display: inline-grid;
     background-color: #102fc9;
-  
+    margin: 25px;
     padding: 0vw 2vw 0vw 2vw;
     text-align: center;
     color: hsl(192, 100%, 10%);
     border: 0.25vw solid #005266;
     border-radius: 0.2in;
+    box-shadow: 1px 10px 5px rgba(0, 0, 0, 0.3);
 }
  /* This is the text that corresponds to the className ExhibitHeading 
     This is a prop of a the Exhibit meaning when calling <Exhibit/> you main enter text 
