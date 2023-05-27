@@ -19,10 +19,10 @@ function App() {
     <div className="App">
         <Banner/>  
         <Exhibit exhibitText = "This is the users IPv4">
-          <AddressDisplay url = 'https://api.ipify.org?format=json'/>
+          <AddressDisplay api_url = 'https://api.ipify.org?format=json'/>
         </Exhibit>
         <Exhibit exhibitText = "This is the users IPv6">
-          <AddressDisplay url='https://api64.ipify.org?format=json' />
+          <AddressDisplay api_url='https://api64.ipify.org?format=json' />
         </Exhibit>
         <Exhibit exhibitText = "This is the latency of the user.">
           <PylonConnector />
